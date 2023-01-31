@@ -10,9 +10,10 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 
 ## Your Explanation Here
 The updated code have following enhancements
-    1. **Moved constant value into config file** 
-        > The constant values like `TRIVIAL_PARTITION_KEY` and `MAX_PARTITION_KEY_LENGTH` are moved into a centralized config file. These values can be reused in other places when required. 
-    2. **Changed the export format**
-        > The export method used earlier was hampering the code readability. Moving all exportable functions of a file into one module.export={} improved readability. A new dev looking at the file will get to know about functions are being exported and being used internally in the file by looking at it. 
-    3. **Changed variable name candidate to partitionKey**
-        > The function is all about determine the partition key by getting an input. The variable candidate is not really explaining the content its holding in the function.
+
+1. **Moved constant value into config file** 
+The constant values like `TRIVIAL_PARTITION_KEY` and `MAX_PARTITION_KEY_LENGTH` are moved into a centralized config file. These values can be reused in other places when required. 
+2. **Changed the export format**
+he export method used earlier was hampering the code readability. Moving all exportable functions of a file into one module.export={} improved readability. A new dev looking at the file will get to know about functions are being exported and being used internally in the file by looking at it. 
+3. **Changed variable name candidate to partitionKey**
+The function is all about determine the partition key by getting an input. The variable candidate is not really explaining the content its holding in the function.
